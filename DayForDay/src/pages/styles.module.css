@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.pageContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  /* height: 60px; */
+  background-color: var(--background-white);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  height: 60px;
+}
+
+.header .content {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+}
+
+.monthFilter {
+  font-size: 15px;
+  height: fit-content;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: var(--font-black);
+  display: flex;
+  gap: 10px;
+  background-color: var(--background-gray);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  user-select: none;
+}
+
+.monthFilter svg {
+  width: 20px;
+}
+
+.monthFilter:hover {
+  transition: ease-in-out 0.3s;
+  border: 1px solid rgb(202, 250, 168);
+  background-color: rgb(226, 253, 207);
+}
+
+.monthFilter:active {
+  transition: ease-in-out 0.1s;
+  border: 1px solid rgb(202, 250, 168);
+  background-color: #c9e6c7;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.contentContainer .contentMedias {
+  display: flex;
+  gap: 20px;
+  width: 70%;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 70%;
+  height: 100%;
+  background-color: var(--background-white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px #7090b035;
+}
+
+.listDays {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.days {
+  font-size: 19px;
+  /* font-weight: 600; */
+  color: var(--font-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px 20px;
+  background-color: var(--background-white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.days:hover,
+.daysOfMonth:hover {
+  transition: ease-in-out 0.2s;
+  box-shadow: 0px 4px 5px #7090b025;
+}
+
+.activeDay {
+  color: var(--font-white);
+  background-color: var(--background-black);
+}
+
+.calendar {
+  padding-top: 20px;
+  box-sizing: border-box;
+  flex: 1;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+}
+
+.daysOfMonth {
+  user-select: none;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: var(--background-white);
+  border: 1px solid var(--border);
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* .daysOfMonth:hover {
+  transition: ease-in-out 0.2s;
+  box-shadow: 0px 4px 5px #7090b032;
+} */
+
+.today {
+  border: 1px solid var(--background-black);
+  border-bottom: 8px solid var(--background-black);
+}
