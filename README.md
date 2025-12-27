@@ -54,7 +54,7 @@ Siga os passos abaixo para testar a aplicação na sua máquina:
 1. **Clone o repositório:**
 
    ```bash
-   git clone (---)
+   git clone (https://github.com/Sammy-0505/DayForDay.git)
 
    ```
 
